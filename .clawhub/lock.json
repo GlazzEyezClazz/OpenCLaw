@@ -8,6 +8,22 @@
     "google-workspace-mcp": {
       "version": "1.0.0",
       "installedAt": 1772388808409
+    },
+    "tg-voice-whisper": {
+      "version": "1.0.0",
+      "installedAt": 1772458883578
+    },
+    "tavily": {
+      "version": "1.0.0",
+      "installedAt": 1772467804586
+    },
+    "firecrawl-search": {
+      "version": "1.0.0",
+      "installedAt": 1772469186607
+    },
+    "excel-xlsx": {
+      "version": "1.0.1",
+      "installedAt": 1772469188464
     }
   }
 }
