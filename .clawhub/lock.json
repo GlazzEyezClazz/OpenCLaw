@@ -5,10 +5,6 @@
       "version": "0.1.0",
       "installedAt": 1772383905356
     },
-    "google-workspace-mcp": {
-      "version": "1.0.0",
-      "installedAt": 1772388808409
-    },
     "tg-voice-whisper": {
       "version": "1.0.0",
       "installedAt": 1772458883578
@@ -24,6 +20,10 @@
     "excel-xlsx": {
       "version": "1.0.1",
       "installedAt": 1772469188464
+    },
+    "google-workspace-mcp": {
+      "version": "1.0.0",
+      "installedAt": 1772529048315
     }
   }
 }
