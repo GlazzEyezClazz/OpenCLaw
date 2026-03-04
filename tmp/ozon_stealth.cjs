@@ -1,0 +1,16 @@
+const { chromium } = require('rebrowser-playwright');
+(async()=>{
+ const url='https://www.ozon.ru/product/apple-macbook-pro-noutbuk-16-apple-m1-pro-10c-cpu-16c-gpu-ram-32-gb-ssd-512-gb-apple-m1-pro-macos-1878151954/';
+ const browser = await chromium.launch({ headless:true, channel:'chrome', args:['--no-sandbox']});
+ const context = await browser.newContext();
+ await context.addInitScript(() => { delete Object.getPrototypeOf(navigator).webdriver; });
+ const page = await context.newPage();
+ await page.goto(url,{waitUntil:'domcontentloaded',timeout:90000});
+ await page.waitForTimeout(6000);
+ const title=await page.title();
+ const txt=await page.locator('body').innerText();
+ const price=(txt.match(/\d[\d\s]{2,}\s?₽/g)||[]).slice(0,10);
+ console.log('TITLE:',title);console.log('URL:',page.url());console.log('PRICES:',price);
+ console.log('SNIP:',txt.slice(0,700).replace(/\n/g,' | '));
+ await browser.close();
+})();

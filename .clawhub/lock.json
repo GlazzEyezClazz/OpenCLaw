@@ -24,6 +24,14 @@
     "google-workspace-mcp": {
       "version": "1.0.0",
       "installedAt": 1772529048315
+    },
+    "stealth-browser": {
+      "version": "1.0.0",
+      "installedAt": 1772624513882
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1772625591921
     }
   }
 }
