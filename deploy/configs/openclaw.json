@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.2",
+    "lastTouchedAt": "2026-03-05T14:02:34.916Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-05T14:02:34.892Z",
+    "lastRunVersion": "2026.3.2",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "browser": {
+    "executablePath": "/home/safeuser/.openclaw/chrome-proxy-wrapper.sh",
+    "headless": true,
+    "noSandbox": true,
+    "defaultProfile": "openclaw"
+  },
+  "auth": {
+    "profiles": {
+      "openai-codex:default": {
+        "provider": "openai-codex",
+        "mode": "oauth"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai-codex/gpt-5.3-codex"
+      },
+      "models": {
+        "openai-codex/gpt-5.3-codex": {}
+      },
+      "workspace": "/home/safeuser/.openclaw/workspace"
+    }
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "provider": "brave",
+        "apiKey": "BSAhHD4dYKaCgrfE2pAazk4RwgpUgHj"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "bash": true,
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "bootstrap-extra-files": {
+          "enabled": true
+        },
+        "command-logger": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "8607778487:AAGtShovpCOAg3CZB3xt97fIUqTYzs5RMN0",
+      "allowFrom": [
+        "1089302087"
+      ],
+      "groupPolicy": "allowlist",
+      "streaming": "off"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18789",
+        "http://127.0.0.1:18789"
+      ]
+    },
+    "auth": {
+      "mode": "token",
+      "token": "5b6894970cae4c485efd6470476e5f0551882c1aa00060fc",
+      "rateLimit": {
+        "maxAttempts": 10,
+        "windowMs": 60000,
+        "lockoutMs": 300000
+      }
+    },
+    "trustedProxies": [
+      "127.0.0.1",
+      "::1"
+    ],
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": []
+    }
+  }
+}
