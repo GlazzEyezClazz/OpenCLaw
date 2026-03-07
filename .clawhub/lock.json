@@ -32,6 +32,10 @@
     "agent-browser": {
       "version": "0.2.0",
       "installedAt": 1772625591921
+    },
+    "2captcha": {
+      "version": "1.0.0",
+      "installedAt": 1772894539877
     }
   }
 }
