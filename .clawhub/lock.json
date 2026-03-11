@@ -36,6 +36,14 @@
     "2captcha": {
       "version": "1.0.0",
       "installedAt": 1772894539877
+    },
+    "verification-before-completion": {
+      "version": "0.1.0",
+      "installedAt": 1773253609892
+    },
+    "autonomous-execution": {
+      "version": "1.1.0",
+      "installedAt": 1773253620066
     }
   }
 }
