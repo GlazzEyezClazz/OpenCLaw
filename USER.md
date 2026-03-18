@@ -7,6 +7,7 @@ _Learn about the person you're helping. Update this as you go._
 - **Pronouns:** _(optional)_
 - **Timezone:**
 - **Notes:**
+  - Для подборок товаров всегда фильтровать только позиции в наличии (in stock).
 
 ## Context
 
