@@ -2,11 +2,11 @@
 
 _Learn about the person you're helping. Update this as you go._
 
-- **Name:**
-- **What to call them:**
+- **Name:** Никита
+- **What to call them:** Никита
 - **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+- **Timezone:** UTC
+- **Notes:** Хочет, чтобы ассистент был универсальным другом-помощником: «всё умеет и знает». 
 
 ## Context
 
