@@ -1,0 +1,13 @@
+component_type,manufacturer,website,email,phone_cn,wordstat_monthly_queries,wordstat_query,notes,manufacturer_cn,manufacturer_ru,wordstat_query_cn_suggested,wordstat_query_ru_suggested
+AI accelerators / GPUs,Huawei (Ascend),https://www.huawei.com,enterprise@huawei.com;+86 755 28780808 (HQ contact page),+86 755 28780808,2080171,Huawei,Email/phone from Huawei contact sources; query in Latin,华为（昇腾）,Хуавэй,华为（昇腾）,Хуавэй
+AI accelerators / GPUs,Cambricon,https://www.cambricon.com,IR/contacts via official site form,not publicly listed,62,Cambricon,Direct public generic email/phone not clearly exposed,寒武纪,Кэмбрикон,寒武纪,Кэмбрикон
+AI accelerators / GPUs,Biren Technology,https://www.birentech.com,business@birentech.com,+86 21-68773133,52,Biren,Public business listing contact,壁仞科技,Бирен,壁仞科技,Бирен
+AI accelerators / GPUs,Iluvatar CoreX,https://www.iluvatar.com,contact form (official),not publicly listed,63,Iluvatar,Direct public generic email/phone not clearly exposed,天数智芯,Илуватар КорЭкс,天数智芯,Илуватар КорЭкс
+AI accelerators / GPUs,Enflame,https://www.enflame-tech.com,contact form (official),not publicly listed,42,Enflame,Direct public generic email/phone not clearly exposed,燧原科技,Энфлейм,燧原科技,Энфлейм
+Server OEM/ODM,Inspur,https://www.inspur.com,global contact forms; sales@inspursystems.com (public listing),not clearly published CN main line,848,Inspur,Mainland CN public generic phone hard to verify in open sources,浪潮信息,Инспур,浪潮信息,Инспур
+Server OEM/ODM,H3C,https://www.h3c.com,presale@h3c.com; h3c@service.h3c.com,+86 571 86763000,19857,H3C,From H3C headquarters/support pages,新华三,Эйч3Си,新华三,Эйч3Си
+Server OEM/ODM,Lenovo (Infrastructure/CN),https://datacentersupport.lenovo.com/cn/en/contact-us,contact via Lenovo support channels,+86 21 6132 8000; 400-116-0099,666457,Lenovo,China contact lines from Lenovo infra-related contact pages,联想,Леново,联想,Леново
+CPU (server/general),Loongson,https://www.loongson.cn,service@loongson.cn,not publicly listed,557,Loongson,Email from public business listing,龙芯,Лунсун,龙芯,Лунсун
+CPU (server/general),Phytium,https://www.phytium.com.cn,official contact form / business channels,not publicly listed,19,Phytium,Direct public generic email/phone not clearly exposed,飞腾,Файтюм,飞腾,Файтюм
+Memory (DRAM),CXMT,https://www.cxmt.com,info@cxmt.com; sales@cxmt.com,not publicly listed,931,CXMT,Email from official CXMT pages,长鑫存储,СиЭксЭмТи,长鑫存储,СиЭксЭмТи
+Memory (NAND),YMTC,https://www.ymtc.com,YMTC@ymtc.com,+86 27 87906000,1226,YMTC,Public business listing contact,长江存储,УайЭмТиСи,长江存储,УайЭмТиСи
