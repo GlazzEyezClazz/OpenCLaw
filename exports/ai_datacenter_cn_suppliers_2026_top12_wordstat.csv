@@ -1,0 +1,13 @@
+component_type,manufacturer,website,email,phone_cn,wordstat_monthly_queries,wordstat_query,notes
+AI accelerators / GPUs,Huawei (Ascend),https://www.huawei.com,enterprise@huawei.com;+86 755 28780808 (HQ contact page),+86 755 28780808,2080171,Huawei,"Email/phone from Huawei contact sources; query in Latin"
+AI accelerators / GPUs,Cambricon,https://www.cambricon.com,IR/contacts via official site form,not publicly listed,62,Cambricon,"Direct public generic email/phone not clearly exposed"
+AI accelerators / GPUs,Biren Technology,https://www.birentech.com,business@birentech.com,+86 21-68773133,52,Biren,"Public business listing contact"
+AI accelerators / GPUs,Iluvatar CoreX,https://www.iluvatar.com,contact form (official),not publicly listed,63,Iluvatar,"Direct public generic email/phone not clearly exposed"
+AI accelerators / GPUs,Enflame,https://www.enflame-tech.com,contact form (official),not publicly listed,42,Enflame,"Direct public generic email/phone not clearly exposed"
+Server OEM/ODM,Inspur,https://www.inspur.com,global contact forms; sales@inspursystems.com (public listing),not clearly published CN main line,848,Inspur,"Mainland CN public generic phone hard to verify in open sources"
+Server OEM/ODM,H3C,https://www.h3c.com,presale@h3c.com; h3c@service.h3c.com,+86 571 86763000,19857,H3C,"From H3C headquarters/support pages"
+Server OEM/ODM,Lenovo (Infrastructure/CN),https://datacentersupport.lenovo.com/cn/en/contact-us,contact via Lenovo support channels,+86 21 6132 8000; 400-116-0099,666457,Lenovo,"China contact lines from Lenovo infra-related contact pages"
+CPU (server/general),Loongson,https://www.loongson.cn,service@loongson.cn,not publicly listed,557,Loongson,"Email from public business listing"
+CPU (server/general),Phytium,https://www.phytium.com.cn,official contact form / business channels,not publicly listed,19,Phytium,"Direct public generic email/phone not clearly exposed"
+Memory (DRAM),CXMT,https://www.cxmt.com,info@cxmt.com; sales@cxmt.com,not publicly listed,931,CXMT,"Email from official CXMT pages"
+Memory (NAND),YMTC,https://www.ymtc.com,YMTC@ymtc.com,+86 27 87906000,1226,YMTC,"Public business listing contact"
