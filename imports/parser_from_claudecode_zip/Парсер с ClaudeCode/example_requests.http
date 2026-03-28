@@ -1,0 +1,139 @@
+### Universal Parser API — Примеры запросов
+### Используйте VS Code REST Client или Postman
+
+@base_url = http://localhost:8000
+
+# ─────────────────────────────────────────────────────────────
+# 1. Проверка работы
+# ─────────────────────────────────────────────────────────────
+GET {{base_url}}/health
+
+###
+
+# ─────────────────────────────────────────────────────────────
+# 2. Синхронный парсинг — поиск iPhone на нескольких сайтах
+# ─────────────────────────────────────────────────────────────
+POST {{base_url}}/scrape
+Content-Type: application/json
+
+{
+  "tasks": [
+    {
+      "product": "iPhone 15 Pro 256GB",
+      "sites": ["wildberries.ru", "ozon.ru"],
+      "extract": ["price", "currency", "product_url", "seller", "availability", "rating"]
+    }
+  ],
+  "options": {
+    "js_render": "auto",
+    "timeout": 30
+  }
+}
+
+###
+
+# ─────────────────────────────────────────────────────────────
+# 3. Мультитоварный поиск — несколько товаров сразу
+# ─────────────────────────────────────────────────────────────
+POST {{base_url}}/scrape
+Content-Type: application/json
+
+{
+  "tasks": [
+    {
+      "product": "Samsung Galaxy S24",
+      "sites": ["avito.ru", "dns-shop.ru", "mvideo.ru"],
+      "extract": ["price", "currency", "product_url", "seller", "seller_contact", "availability"]
+    },
+    {
+      "product": "MacBook Pro M3",
+      "sites": ["wildberries.ru", "ozon.ru"],
+      "extract": ["price", "currency", "product_url", "availability"]
+    }
+  ],
+  "options": {
+    "js_render": "auto",
+    "timeout": 45
+  }
+}
+
+###
+
+# ─────────────────────────────────────────────────────────────
+# 4. Асинхронный парсинг с webhook (для n8n/Neuro42)
+# ─────────────────────────────────────────────────────────────
+POST {{base_url}}/scrape/async
+Content-Type: application/json
+
+{
+  "tasks": [
+    {
+      "product": "Dyson V15",
+      "sites": ["wildberries.ru", "ozon.ru", "eldorado.ru"],
+      "extract": ["price", "currency", "product_url", "seller", "availability", "rating", "reviews_count"]
+    }
+  ],
+  "options": {
+    "js_render": "auto"
+  },
+  "callback_url": "https://your-n8n.com/webhook/parser-result"
+}
+
+###
+
+# ─────────────────────────────────────────────────────────────
+# 5. Проверка статуса асинхронного задания
+# ─────────────────────────────────────────────────────────────
+GET {{base_url}}/jobs/YOUR_JOB_ID_HERE
+
+###
+
+# ─────────────────────────────────────────────────────────────
+# 6. Просто загрузить URL (тест стратегий)
+# ─────────────────────────────────────────────────────────────
+POST {{base_url}}/fetch?url=https://www.wildberries.ru/catalog/0/search.aspx?search=iphone&js_render=auto
+
+###
+
+# ─────────────────────────────────────────────────────────────
+# 7. С прокси
+# ─────────────────────────────────────────────────────────────
+POST {{base_url}}/scrape
+Content-Type: application/json
+
+{
+  "tasks": [
+    {
+      "product": "Nike Air Max 90",
+      "sites": ["amazon.com", "ebay.com"],
+      "extract": ["price", "currency", "product_url", "seller", "availability"]
+    }
+  ],
+  "options": {
+    "js_render": "auto",
+    "proxies": ["http://user:password@proxy.example.com:8080"],
+    "timeout": 60
+  }
+}
+
+###
+
+# ─────────────────────────────────────────────────────────────
+# 8. Принудительный Playwright (для сложных антибот-систем)
+# ─────────────────────────────────────────────────────────────
+POST {{base_url}}/scrape
+Content-Type: application/json
+
+{
+  "tasks": [
+    {
+      "product": "PlayStation 5",
+      "sites": ["avito.ru"],
+      "extract": ["price", "currency", "product_url", "seller", "seller_contact", "location"]
+    }
+  ],
+  "options": {
+    "js_render": "always",
+    "timeout": 60
+  }
+}

@@ -1,0 +1,25 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# HTTP clients
+httpx[http2]==0.27.2
+requests==2.32.3
+cloudscraper==1.2.71
+
+# Browser automation
+playwright==1.47.0
+
+# HTML parsing
+beautifulsoup4==4.12.3
+lxml==5.3.0
+
+# Claude API
+anthropic==0.34.2
+
+# Async & utilities
+python-dotenv==1.0.1
+aiofiles==24.1.0
+tenacity==9.0.0
+fake-useragent==1.5.1

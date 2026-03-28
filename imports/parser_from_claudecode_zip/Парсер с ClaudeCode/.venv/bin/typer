@@ -1,0 +1,8 @@
+#!/bin/sh
+'''exec' "/home/safeuser/.openclaw/workspace/imports/parser_from_claudecode_zip/Парсер с ClaudeCode/.venv/bin/python3" "$0" "$@"
+' '''
+import sys
+from typer.cli import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
